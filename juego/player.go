@@ -16,3 +16,7 @@ func NewPlayer(name string, mazo *Mazo) *Player {
 func (p *Player) robar() {
 	p.mano = append(p.mano, p.deck.robar())
 }
+
+func (p *Player) IniciarTurno() {
+
+}
