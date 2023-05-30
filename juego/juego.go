@@ -12,7 +12,7 @@ func NewJuego(tab *Tablero, player1 *Player, player2 *Player) *Juego {
 	return &Juego{tablero: tab, turno: 1, ganador: "Empate", p1: player1, p2: player2}
 }
 
-func (j *Juego) IniciarJuego() {
+func (j *Juego) IniciarPartida() {
 	j.IniciarTurno()
 }
 
