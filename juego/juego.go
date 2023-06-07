@@ -19,12 +19,12 @@ func (j *Juego) IniciarPartida() {
 func (j *Juego) IniciarTurno() {
 	if j.turno == 1 {
 		for i := 0; i < 6; i++ {
-			j.p1.robar()
-			j.p2.robar()
+			j.p1.Robar()
+			j.p2.Robar()
 			j.p1.IniciarTurno()
 		}
 	} else if j.turno%2 != 0 {
-		j.p1.robar()
+		j.p1.Robar()
 	} else {
 		return
 	}

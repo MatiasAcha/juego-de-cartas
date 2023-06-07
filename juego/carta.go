@@ -13,3 +13,8 @@ func NewCarta(poder *Puntos, nombre string, atributo string) *Carta {
 func (c *Carta) Pelear(b *Carta) {
 
 }
+
+func (c *Carta) String() string {
+	result := c.nombre + ", Puntos: " + c.poder.String()
+	return result
+}
